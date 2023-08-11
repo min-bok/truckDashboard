@@ -1,12 +1,18 @@
 import GlobalStyle from "./style/GlobalStyle";
+import styled from "styled-components"
 
-function App() {
+export default function App() {
   return (
     <>
       <GlobalStyle/>
-      <p>sdfsddf</p>
+      <Test>
+        <p>sdfsddf</p>
+      </Test>
     </>
   );
 }
 
-export default App;
+const Test = styled.div`
+  background-color: var(--main-color)
+`
+
