@@ -1,18 +1,16 @@
 import GlobalStyle from "./style/GlobalStyle";
-import styled from "styled-components"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { Dashboard } from "../src/pages"
 
 export default function App() {
   return (
     <>
       <GlobalStyle/>
-      <Test>
-        <p>sdfsddf</p>
-      </Test>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Dashboard/>}></Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
-
-const Test = styled.div`
-  background-color: var(--main-color)
-`
-

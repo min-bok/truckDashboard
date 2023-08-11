@@ -1,6 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
 
+// 1280 * 720 기준
+
  const GlobalStyle = createGlobalStyle`
     ${reset}
 
@@ -17,6 +19,8 @@ import reset from "styled-reset";
         --green-color: #5DC983;
         --yello-color: #F2AF4C;
         --red-color: #EB5769;
+        --bg-color: #F2F2F2;
+        --text-color: #949494;
 
         /* font-size */
         --large-size: 24px;
@@ -26,12 +30,22 @@ import reset from "styled-reset";
 
         /* font-weight */
         --bold-weight: 700;
-        --medium-weight: 500;
+        --medium-weight: 600;
         --regular-weight: 400;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
     }
 
     html {
         font-family: 'Pretendard-Regular'; 
+    }
+
+    body {
+        background-color: var(--bg-color);
     }
 `
 
