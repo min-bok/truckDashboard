@@ -3,7 +3,7 @@ import reset from "styled-reset";
 
 // 1280 * 720 기준
 
- const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
     ${reset}
 
     @font-face {
@@ -15,11 +15,11 @@ import reset from "styled-reset";
         /* color */
         --main-color: #7B57DF;
         --dark-color: #1B2149;
-        --light-color: #FFFFFF;
+        --light-color: #f9f7f7;
         --green-color: #5DC983;
         --yello-color: #F2AF4C;
         --red-color: #EB5769;
-        --bg-color: #F2F2F2;
+        --bg-color: #f3f2f5;
         --text-color: #949494;
 
         /* font-size */
@@ -47,6 +47,6 @@ import reset from "styled-reset";
     body {
         background-color: var(--bg-color);
     }
-`
+`;
 
 export default GlobalStyle;

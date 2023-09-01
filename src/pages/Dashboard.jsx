@@ -1,14 +1,17 @@
-import React from "react"
-import styled from "styled-components"
-import { Nav } from "../components/organisms"
+import React from "react";
+import styled from "styled-components";
+import { Nav } from "../components/organisms";
+import { Contents } from "../components/templates";
 
 export default function Dashboard() {
-    return (
-        <Wrap>
-            <Nav/>
-            <p>sdfsdfd</p>
-        </Wrap>
-    )
+  return (
+    <Wrap>
+      <Nav />
+      <Contents />
+    </Wrap>
+  );
 }
 
-const Wrap = styled.div``
+const Wrap = styled.div`
+  display: flex;
+`;
