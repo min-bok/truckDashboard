@@ -1,4 +1,8 @@
 import "@/style/globals.css";
+import style from "./layout.module.css";
+import Header from "@/components/layouts/Header";
+import Nav from "@/components/layouts/Nav";
+import Body from "@/components/layouts/Body";
 
 export const metadata = {
   title: "dashboard",
@@ -8,7 +12,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ko">
-      <body>{children}</body>
+      <body className={style.body}>
+        <Nav />
+        <Body>
+          <Header />
+          {children}
+        </Body>
+      </body>
     </html>
   );
 }
