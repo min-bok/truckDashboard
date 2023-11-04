@@ -1,0 +1,29 @@
+div.list {
+  position: relative;
+  cursor: pointer;
+  padding: 0.65em 0;
+}
+
+div.list:hover {
+  background-color: rgba(123, 87, 223, 0.1);
+}
+
+div.list:hover::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background-color: var(--main-color);
+  top: 0;
+  left: 0;
+}
+
+.list p.text {
+  color: var(--font1-color);
+  font-size: 1em;
+  padding-left: 1.5em;
+}
+
+.list:hover p.text {
+  font-weight: 600;
+}

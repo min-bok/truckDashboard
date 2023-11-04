@@ -1,0 +1,77 @@
+.nav {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 16.5vw;
+  height: 100vh;
+  background-color: var(--white-color);
+  box-shadow: 2px 2px 4px rgba(123, 87, 223, 0.1);
+  font-size: 20px;
+  padding: 5.85em 0 0 0;
+}
+
+button.expandBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #c4b5eb;
+  border: none;
+  border-radius: 50%;
+  top: 59px;
+  box-sizing: border-box;
+  right: -20px;
+}
+
+div.alert {
+  font-size: 1em;
+  color: var(--font1-color);
+  padding: 0 0 1.6em 1.5em;
+  margin-bottom: 0.95em;
+  border-bottom: 1.75px solid var(--gray-color);
+}
+
+div.bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+button.addBtn {
+  margin: 0 1.5em;
+  height: 54px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 0.8em;
+  color: var(--white-color);
+  background-color: var(--main-color);
+}
+
+div.user {
+  width: 100%;
+  bottom: 0;
+  margin-top: 2em;
+  padding: 1.75em 0 1.75em 1.5em;
+  border-top: 1.75px solid var(--gray-color);
+}
+
+div.user p.name {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: var(--font1-color);
+  margin-bottom: 10px;
+}
+
+div.user p.kind {
+  font-size: 0.7em;
+  color: var(--font2-color);
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .nav {
+    font-size: 16px;
+  }
+}
